@@ -1,0 +1,279 @@
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	line-height: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background: rgb(100,0,121);
+    background: linear-gradient(0deg, rgb(57, 0, 6) 0%, rgba(103,0,0,1) 51%, rgba(143,24,24,1) 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: min-content;
+    flex-wrap: wrap;
+    background-color: rgba(27, 25, 25, 0.774);
+    border-radius: 10px;
+    padding: 10 20px;
+    margin: 0 100px;
+}
+.nav{
+    width: 100%;
+    background-color: #000000;
+    height: 40px;
+    position: sticky;
+    display:inline;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    color: rgba(103,0,0,0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 rgba(103,0,0,0.8);
+    color: #000000;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    z-index:99999;
+  }
+.nav > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    line-height: 30px;
+    float: right;
+    align-self: center;
+    color: rgb(209, 139, 109);
+    margin: 0 10px;
+    padding: 5px 0;
+    align-content: center;
+}
+.nav > a:hover{
+    color: rgb(209, 139, 109);
+    box-shadow: inset  0 0 50px 0 rgb(103,0,0);
+}
+
+#lname{
+    text-decoration: none;
+      display: flex;
+      justify-content: center;
+      width: 15%;
+      font-size: 27px;
+      line-height: 30px;
+      float: left;
+      align-self: center;
+      color: rgb(255, 61, 0);
+      margin: 0 30%;
+      padding: 5px 0;
+      align-content: center;
+  }
+
+#lg{
+    width: 100px;
+    float: left;
+    align-self: center;
+    margin: 10px;
+    padding: 0;
+}
+
+.cd{
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(209, 139, 109);
+    margin: 0 30px;
+  }
+
+.card{
+    display: block;
+    float: left;
+    height: 400px;
+    width:300px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 50px;
+    margin-top: 100px;
+    border-width: 7px;
+    border-color: rgb(255, 61, 0);
+    border-style:dashed;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 50;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffffdb;
+    h1{
+        font-size: 20px;
+        width: 100%;
+    }
+    h2{
+        width: 100%;
+        font-size: 23px;
+        color: rgb(209, 139, 109);
+    }
+    a{
+        text-decoration: none;
+        width: min-content;
+        padding: 7px;
+        margin: 5px;
+        font-size: 17px;
+        color: #000000;
+        background: rgb(209, 139, 109);
+    }
+    img{
+        margin-right: 10px;
+    }
+}
+#ff{
+    display: flex;
+    margin: 30px 0;
+}
+#quiz{
+    display: flex;
+    position: relative;
+    width: 55%;
+    font-size: 20px;
+    margin: 100px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffffdb;
+    flex-wrap: wrap;
+    p{
+        display: block;
+        width: 100%;
+    }
+}
+.footer{
+    width: 100%;
+    background-color: #000000;
+    height: 50px;
+    position:relative;
+    display: flex;
+    align-content: center;
+    align-self: end;
+    top: 0;
+    color: rgba(103,0,0,0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 rgba(103,0,0,0.8);
+    color: #000000;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.footer > a, .footer > p{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 17%;
+    line-height: 30px;
+    float: left;
+    align-self: center;
+    color: rgb(209, 139, 109);
+    margin: 0 15px;
+    padding: 5px 0;
+    align-content: center;
+    img{
+      margin-right: 5px;
+    }
+}
+.footer > a:hover, .footer > p:hover{
+    color: rgb(209, 139, 109)0;
+    box-shadow: inset  0 0 50px 0 rgb(103,0,0);
+}
+
+.atop{
+  background-color: #272727d1;
+  height: 30px;
+  width: 30px;
+  position: sticky;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: 95%;
+  left: 99%;
+  color: rgb(255, 61, 0);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 rgb(209, 139, 109);
+  color: #000000;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.atop:hover {
+  color: #000000;
+  box-shadow: inset  30px 0px 50px 0px rgb(255, 61, 0);
+}
+.atop>a{
+  color: rgb(255, 61, 0);
+  width: 25px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+}
+.atop:hover>a{
+  color: #000000;
+  background-color: #ffffff00;
+}
